@@ -1,0 +1,21 @@
+{
+  "name": "slacktobuffer",
+  "version": "6.9.4",
+  "description": "post from slack channel to buffer",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JerMaineMontiel/slacktobuffer.git"
+  },
+  "author": "Jer'Maine Jones",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JerMaineMontiel/slacktobuffer/issues"
+  },
+  "homepage": "https://github.com/JerMaineMontiel/slacktobuffer#readme"
+}
