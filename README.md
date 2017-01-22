@@ -1,6 +1,6 @@
 #SlackToBuffer
-###Use a channel in your Slack to add posts to your Buffer!
+###Use /buffit to send your Slack message to your Buffer account!
 
-This app uses [Node.js](http://nodejs.org).
+This app is built with [Express](http://expressjs.com).
 
 Check out the [Slack API](http://api.slack.com) and the [Buffer API](http://buffer.com/developers/api) for more information.
