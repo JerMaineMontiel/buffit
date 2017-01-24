@@ -17,7 +17,7 @@ const bufferRequest = (tweet, callback) => { //post the message to Buffer
     now: false,
     top: false,
   };
-  requestModule.post("http://api.buffer.com/1/updates/create", data, (err, res, body) => { //create a Buffer request
+  requestModule.post("http://api.buffer.com/1/updates/create", form: data, (err, res, body) => { //create a Buffer request
     if (err){ //if it's an error
       callback(err); //send the error to the callback
     }
@@ -44,7 +44,7 @@ const slackResponse = (req, res, callback) => { //the message posted to the Slac
   }
 };
 
-app.use(bodyPaser.urlencoded({ extended: true })); //parse all payloads
+app.use(bodyParser.urlencoded({ extended: true })); //parse all payloads
 
 app.get('/command', (request, response) => {
   bufferRequest(request.body.text, (err, res, body) => {
