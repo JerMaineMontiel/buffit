@@ -5,9 +5,16 @@ const requestModule = require('request'); //for creating http requests
 
 const app = express();
 const PORT = process.env.PORT || 4390;
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); //parse all payloads
+
 
 const SLACK_TOKEN = process.env.SLACK_TOKEN || 'xxxxxxxxxxx'; //insert your Slack token here, or through Heroku
-const BUFFER_TOKEN = process.env.BUFFER_TOKEN || 'xxxxxxxxxxx'; //insert your Buffer token, or through Heroku
+
+//insert your Buffer client ID, or through Heroku
+const BUFFER_CLIENT_ID = process.env.BUFFER_CLIENT_ID || '58842b27942c4e69320f29a2';
+//insert your Buffer redirect uri, or through Heroku
+const BUFFER_REDIRECT_URI = process.env.BUFFER_REDIRECT_URI || 'http://6f0fed8d.ngrok.io/redirect';
 
 const bufferRequest = (tweet, callback) => { //post the message to Buffer
   let data = {
@@ -43,8 +50,6 @@ const slackResponse = (req, res, callback) => { //the message posted to the Slac
     return res.status(200).end();
   }
 };
-
-app.use(bodyParser.urlencoded({ extended: true })); //parse all payloads
 
 app.get('/command', (request, response) => {
   bufferRequest(request.body.text, (err, res, body) => {
