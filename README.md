@@ -1,4 +1,4 @@
-#SlackToBuffer
+#Buffit
 ###Use the /buffit slash command to send your Slack message to your Buffer account!
 
 This app is built with [Express](http://expressjs.com).
