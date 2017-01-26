@@ -20,7 +20,7 @@ const BUFFER_ACCESS_TOKEN = process.env.BUFFER_ACCESS_TOKEN || "xxxxxxxxxxx";
 //object of service:username array pairs, for use in the Buffer request
 const PROFILE_IDS =
 {
-  'twitter': ['talkdatcode']
+  'service': ['username']
 };
 
 /*
