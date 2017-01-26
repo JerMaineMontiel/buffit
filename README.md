@@ -28,7 +28,7 @@ A little explanation how it works:
 <li>the app makes a request to the Buffer API for the list of profiles you have.</li>
 <li>the app will then search for <em>service</em>, then <em>username</em> in the packet that was received.  It'll get the corresponding <em>id</em> for use in the API request</li> 
 <li>the <em>service</em> values are an array, so just add the usernames of any profile for that service. For example, if you have two Twitter profiles you'd like to post to, add <em>'twitter': [ 'handle1', 'handle2' ]</em> to the object.</li>
-<ul>
+</ul>
 
 For more info on this you can check out the [API docs](http://buffer.com/developers/api).
 
