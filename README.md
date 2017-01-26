@@ -1,4 +1,4 @@
-![buffit logo](https://dl.dropboxusercontent.com/u/9299425/BUFFIT.png)
+<img alt="buffit logo" style="max-width: 20px;" src="https://dl.dropboxusercontent.com/u/9299425/BUFFIT.png">
 
 This app is built with [Node](http://nodejs.org) and [Express](http://expressjs.com), and comes ready to go for Heroku deployment. 
 
