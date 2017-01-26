@@ -6,10 +6,12 @@ Other modules used are the [body-parser](https://github.com/expressjs/body-parse
 
 <h3>Get you an app for your Buffer</h3>
 First thing you should is set up an app for your [Buffer account](http://buffer.com/developers), and take note of the credentials: 
- - `client_id`
- - `client_secret` (you'll receive this by email)
- - `access_token`
- 
+<ul>
+<li> `client_id` </li>
+<li>`client_secret` (you'll receive this by email)</li>
+<li>`access_token`</li>
+</ul>
+
 `redirect_uri` is required to set up the app, however, you won't be in need of that for the slash command.
 
 <h3>Deploy the code to Heroku</h3>
