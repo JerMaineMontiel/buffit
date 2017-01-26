@@ -4,7 +4,7 @@ This app is built with [Node](http://nodejs.org) and [Express](http://expressjs.
 
 Other modules used are the [body-parser](https://github.com/expressjs/body-parser) middleware for express and [request](https://github.com/request/request) for simplified HTTP requests.
 
-<h4>Get you an app for your Buffer</h4>
+<h3>Get you an app for your Buffer</h3>
 First thing you should is set up an app for your [Buffer account](http://buffer.com/developers), and take note of the credentials: 
  - `client_id`
  - `client_secret` (you'll receive this by email)
@@ -12,7 +12,7 @@ First thing you should is set up an app for your [Buffer account](http://buffer.
  
 `redirect_uri` is required to set up the app, however, you won't be in need of that for the slash command.
 
-<h4>Deploy the code to Heroku</h4>
+<h3>Deploy the code to Heroku</h3>
 Next step is deploying the code to Heroku. But **before you do**, check the `PROFILE_IDS` object in the code and add the profiles you would like to post to. 
 
 ```javascript
