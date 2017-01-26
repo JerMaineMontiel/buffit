@@ -1,9 +1,9 @@
 ![buffit logo](https://dl.dropboxusercontent.com/u/9299425/BUFFIT.png)
-###Use the /buffit slash command to send your Slack message to your Buffer account!
+<h3>Use the /buffit slash command to send your Slack message to your Buffer account!</h3>
 
 This app is built with [Node](http://nodejs.org) and [Express](http://expressjs.com), and comes ready to go for Heroku deployment.
 
-####Get you an app for your Buffer
+<h4>Get you an app for your Buffer</h4>
 First thing you should is set up an app for your [Buffer account](http://buffer.com/developers), and take note of the credentials: 
  - `client_id`
  - `client_secret` (you'll receive this by email)
@@ -11,7 +11,7 @@ First thing you should is set up an app for your [Buffer account](http://buffer.
  
 `redirect_uri` is required to set up the app; however, you won't be in need of that for the slash command. You won't actually be doing any authorization, as the `access_token` you're given is for your Buffer account.
 
-####Deploy the code to Heroku
+<h4>Deploy the code to Heroku</h4>
 Next step is deploying the code to Heroku. But **before you do**, check the `PROFILE_IDS` object in the code and add the profiles you would like to post to. 
 
 ```javascript
