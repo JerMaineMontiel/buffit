@@ -122,6 +122,7 @@ const slackResponse = (req, res, callback) => {
   }
   else {
     return res.status(200).end();
+    callback();
   }
 };
 
