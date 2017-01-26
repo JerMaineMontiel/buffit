@@ -5,8 +5,8 @@ getBufferProfileIDs method
 */
   exports.getBufferProfileIDs = () => {
     let ids = [];
-
-    requestModule.get('https://api.bufferapp.com/1/profiles', (err, res, body) => {
+    let url = 'https://api.bufferapp.com/1/profiles.json?access_token=' + BUFFER_ACCESS_TOKEN;
+    requestModule.get(url, (err, res, body) => {
       if(err)
       {
         callback(err);
@@ -22,6 +22,7 @@ getBufferProfileIDs method
             for( let usrname in service )
             {
               if( body[i].service_username === usrname ) { ids.push(body[i].id); }
+              console.log(ids);
             }
           }
         }
