@@ -7,9 +7,9 @@ Other modules used are the [body-parser](https://github.com/expressjs/body-parse
 <h3>Get you an app for your Buffer</h3>
 First thing you should is set up an app for your [Buffer account](http://buffer.com/developers), and take note of the credentials: 
 <ul>
-<li> `client_id` </li>
-<li>`client_secret` (you'll receive this by email)</li>
-<li>`access_token`</li>
+<li>client_id </li>
+<li>client_secret (you'll receive this by email)</li>
+<li>access_token </li>
 </ul>
 
 `redirect_uri` is required to set up the app, however, you won't be in need of that for the slash command.
@@ -24,9 +24,9 @@ const PROFILE_IDS =
 };
 ```
 A little explanation how it works:
- - the app makes a request to the Buffer API for the list of profiles you have.
- - the app will then search for `service`, then `username` in the packet that was received.  It'll get the corresponding `id` for use in the API request. 
- - the `service` values are an array, so just add the usernames of any profile for that service. For example, if you have two Twitter profiles you'd like to post to, add `'twitter': [ 'handle1', 'handle2' ]` to the object.
+  1. the app makes a request to the Buffer API for the list of profiles you have.
+  2. the app will then search for `service`, then `username` in the packet that was received.  It'll get the corresponding `id` for use in the API request. 
+  3. the `service` values are an array, so just add the usernames of any profile for that service. For example, if you have two Twitter profiles you'd like to post to, add `'twitter': [ 'handle1', 'handle2' ]` to the object.
 
 For more info on this you can check out the [API docs](http://buffer.com/developers/api).
 
