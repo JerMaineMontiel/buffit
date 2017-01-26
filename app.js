@@ -112,7 +112,8 @@ slackResponse method
 const slackResponse = (req, res, callback) => {
   var userName = req.body.user_name;
   var payload = {
-    text: 'Thanks, ' + userName + '! Your message was added to Buffer.'
+    text: 'Thanks, ' + userName + '! Your message was added to Buffer.',
+    response_type: 'in_channel'
   };
 
   if ( userName !== 'slackbot')
