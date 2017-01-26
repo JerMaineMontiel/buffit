@@ -19,9 +19,7 @@ const BUFFER_CLIENT_SECRET = process.env.BUFFER_CLIENT_SECRET || 'xxxxxxxxxxx';
 const BUFFER_ACCESS_TOKEN = process.env.BUFFER_ACCESS_TOKEN || "xxxxxxxxxxx";
 //object of service:username array pairs, for use in the Buffer request
 const PROFILE_IDS = process.env.BUFFER_PROFILE_IDS ||
-{
-  'service': ['username', ...]
-};
+{};
 
 /*
 getBufferProfileIDs method
