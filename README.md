@@ -2,7 +2,7 @@
 
 This app is built with [Node](http://nodejs.org) and [Express](http://expressjs.com), and comes ready to go for Heroku deployment. 
 
-Other modules used are the [body-parser](https://github.com/expressjs/body-parser) middleware for express and [request](https://github.com/request/request) for simplified HTTP requests.
+Other modules used are the [body-parser](https://github.com/expressjs/body-parser) middleware for express and [request](https://github.com/request/request) for simplified HTTP requests. You can also check out the [Slack API](http://api.slack.com) and the [Buffer API](http://buffer.com/developers/api) documentation for more information.
 
 <h3>Get you an app for your Buffer</h3>
 First thing you should is set up an app for your [Buffer account](http://buffer.com/developers), and take note of the credentials: 
@@ -30,8 +30,14 @@ A little explanation how it works:
 <li>the <em>service</em> values are an array, so just add the usernames of any profile for that service. For example, if you have two Twitter profiles you'd like to post to, add <em>'twitter': [ 'handle1', 'handle2' ]</em> to the object.</li>
 </ul>
 
-For more info on this you can check out the [API docs](http://buffer.com/developers/api).
+Once you've done that and deployed the code, take note of the URL to your app in Settings. (should be an https URL). This is also where your Config Vars are located, so plug those Buffer credentials in there.
 
-After you've deployed your code to Heroku, you can go to the Settings and input your Buffer credentials in the Config Vars.
+<h3>Set up a slash command integration for your Slack group</h3>
+Check out [this page](https://api.slack.com/custom-integrations) on steps to do that. 
 
-Check out the [Slack API](http://api.slack.com) and the [Buffer API](http://buffer.com/developers/api) for more information.
+You'll use the Heroku URL at set up, with the "/command" route at the end. (ex: https:// yourapp.herokuapp.com /command) Also take note of the access token it gives you, and go back to your Config Vars in the Heroku settings and plug it in.
+
+<h3>Test it out!</h3>
+A simple `/buffit` (or actually, whatever slash command you gave at set up) and `hello world` to test and you're good to go! The app will post back to the channel where you initiated the command with a nice "thank you" message. And double check your Buffer queue for the post. :)
+
+Any issues you find, feel free to let me know or make a pull request. Hope you like it!
