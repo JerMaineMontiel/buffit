@@ -9,18 +9,18 @@ app.use(bodyParser.json()); //parse all payloads
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //insert your Slack token here, or through Heroku
-const SLACK_TOKEN = process.env.SLACK_TOKEN || 'L9ADY964Q9BrGESFFw2VJHJH';
+const SLACK_TOKEN = process.env.SLACK_TOKEN || 'xxxxxxxxxxx';
 
 //insert your Buffer client ID, or through Heroku
-const BUFFER_CLIENT_ID = process.env.BUFFER_CLIENT_ID || '58842b27942c4e69320f29a2';
+const BUFFER_CLIENT_ID = process.env.BUFFER_CLIENT_ID || 'xxxxxxxxxxx';
 //insert your Buffer client secret, or through Heroku
-const BUFFER_CLIENT_SECRET = process.env.BUFFER_CLIENT_SECRET || 'e715b31d629eecb339efe09c902e7479';
+const BUFFER_CLIENT_SECRET = process.env.BUFFER_CLIENT_SECRET || 'xxxxxxxxxxx';
 //inser your Buffer access token, or through Heroku
-const BUFFER_ACCESS_TOKEN = process.env.BUFFER_ACCESS_TOKEN || "1/0a514d534c5aa60ef3fa479e3c74a3c8";
-//object of profile username:profile_id pairs by service, for use in the Buffer request
+const BUFFER_ACCESS_TOKEN = process.env.BUFFER_ACCESS_TOKEN || "xxxxxxxxxxx";
+//object of service:username array pairs, for use in the Buffer request
 const PROFILE_IDS = process.env.BUFFER_PROFILE_IDS ||
 {
-  'twitter': ['talkdatcode']
+  'service': ['username', ...]
 };
 
 /*
