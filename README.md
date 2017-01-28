@@ -33,21 +33,6 @@ A little explanation how it works:
 Once you've done that and deployed the code, take note of the URL to your app in Settings. (should be an https URL). This is also where your Config Vars are located, so plug those Buffer credentials in there.
 
 <h3>Set up a slash command integration for your Slack group</h3>
-Check out [this page](https://
-```javascript
-const PROFILE_IDS =
-{
-  'service': ['username']
-};
-```
-A little explanation how it works:
-<ul>
-<li>the app makes a request to the Buffer API for the list of profiles you have.</li>
-<li>the app will then search for <em>service</em>, then <em>username</em> in the packet that was received.  It'll get the corresponding <em>id</em> for use in the API request</li> 
-<li>the <em>service</em> values are an array, so just add the usernames of any profile for that service. For example, if you have two Twitter profiles you'd like to post to, add <em>'twitter': [ 'handle1', 'handle2' ]</em> to the object.</li>
-</ul>
-Once you've done that and deployed the code, take note of the URL to your app in Settings. (should be an https URL). This is also where your Config Vars are located, so plug those Buffer credentials in there.
-<h3>Set up a slash command integration for your Slack group</h3>
 Check out [this page](https://my.slack.com/services/new/slash-commands) on steps to do that. 
 
 You'll use the Heroku URL at set up, with the "/command" route at the end. (ex: https:// yourapp.herokuapp.com /command) Also take note of the access token it gives you, and go back to your Config Vars in the Heroku settings and plug it in.
