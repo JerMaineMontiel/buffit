@@ -44,7 +44,7 @@ const getBufferProfileIDs = (callback) => {
     else{
       console.log('profiles received.');
       let resData = JSON.parse(body);
-
+      console.log(resData);
       for( let i = 0; i < resData.length; i++)
       {
         for( let service in PROFILE_IDS )
