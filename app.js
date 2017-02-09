@@ -42,7 +42,7 @@ const getBufferProfileIDs = (callback) => {
       callback(null, res, body);
     }
     else{
-      console.log('profiles received.');
+      console.log('profiles received. Response: %s', res);
       let resData = JSON.parse(body);
       console.log(resData);
       for( let i = 0; i < resData.length; i++)
