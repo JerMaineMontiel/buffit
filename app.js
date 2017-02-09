@@ -59,8 +59,8 @@ const getBufferProfileIDs = (callback) => {
           }
         }
       }
+      callback(ids);
     }
-    callback(ids);
   });
 };
 
